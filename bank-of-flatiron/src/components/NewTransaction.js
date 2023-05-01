@@ -33,5 +33,46 @@ function NewTransaction({ newData }) {
 		setFormData("");
 	}
 
-	
+	function handleChange(e) {
+		e.preventDefault();
+		const key = e.target.name;
+		const value = e.target.value;
+		setFormData({ ...formData, [key]: value });
+		console.log(formData);
+	}
+	return (
+		<div className="search-box">
+			<form onSubmit={handleSubmit} className="">
+				<div className="fom">
+					<input
+						type="text"
+						name="description"
+						placeholder="Description"
+						value={formData.description}
+						onChange={handleChange}
+					/>
+					<input
+						type="text"
+						name="category"
+						placeholder="Category"
+						value={formData.category}
+						onChange={handleChange}
+					/>
+					<input type="date" name="date" onChange={handleChange} />
+					<input
+						type="number"
+						name="amount"
+						placeholder="Amount"
+						value={formData.amount}
+						onChange={handleChange}
+					/>
+					<button className="" type="submit">
+						Add Transaction
+					</button>
+				</div>
+			</form>
+		</div>
+	);
+}
+
 export default NewTransaction;
