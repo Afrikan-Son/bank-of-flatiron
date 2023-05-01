@@ -19,7 +19,7 @@ function NewTransaction({ newData }) {
 				"Please choose a Year between 2000 and today"
 			);
 		} else if (!formInput.isInvalid) {
-			fetch("https://api.npoint.io/1a81959eb42f2050e8cc/transactions/", {
+			fetch("https://api.npoint.io/2bb63b95c77fa8aa4d3e/transactions/", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
