@@ -1,5 +1,11 @@
 # React Week 1 Code Challenge
 
+# Getting Started
+
+Make sure to have th following on your computer:
+1. A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+2. Nodejs 18.0
+
 # Instructions
 For this project, we’ll be building out a React application that displays a list of your recent bank transactions, among other features.
 
